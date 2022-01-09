@@ -7,8 +7,11 @@
 @import 'base/animations';
 @import 'base/typography';
 @import 'base/utulities';
+// layout
+@import 'layout/grid';
 //components
-@import 'components/buttons';
 @import 'components/header';
+@import 'components/buttons';
+@import 'components/composition';
 //pages
 @import 'pages/home';

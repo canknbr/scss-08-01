@@ -29,3 +29,48 @@ body {
     animation: moveInRight 1s cubic-bezier(0.5, 0, 0.5, 1) forwards;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 3px;
+  &:hover {
+    transform: skewY(4deg) skewX(10deg) scale(1.1);
+    text-shadow: 0 2rem 2rem rgba($color-black, 0.2);
+  }
+}
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  letter-spacing: 3px;
+}
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
